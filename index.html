@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="asset/styles/styles.css" />
+    <title>WisataID</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">WisataID</div>
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destination">Destination</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+              <a href="login.html"><i class="fas fa-sign-in-alt"></i></a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- html untuk home -->
+      <section id="home">
+        <article class="title-home">
+          <h2>Proudly Indonesian</h2>
+          <h3>Menyajikan Keindahan Alam Nusantara untuk Dunia!</h3>
+        </article>
+      </section>
+
+      <!-- html untuk destination -->
+      <section id="destination">
+        <article class="title-destination">
+          <h2>Destination</h2>
+          <h4>Rekomendasi Tempat Wisata dari cerita teratas!!!</h4>
+        </article>
+
+        <div class="image-destination">
+          <div class="image-gallery">
+            <a target="_blank" href="asset/image/bali.jpg">
+              <img
+                src="asset/image/bali.jpg"
+                alt="Gapura Bali"
+                width="600"
+                height="400"
+              />
+            </a>
+            <div class="desc">Pulau Wisata Bali</div>
+          </div>
+        </div>
+
+        <div class="image-destination">
+          <div class="image-gallery">
+            <a target="_blank" href="asset/image/jogja.jpg">
+              <img
+                src="asset/image/jogja.jpg"
+                alt="Tugu Jogja"
+                width="600"
+                height="400"
+              />
+            </a>
+            <div class="desc">Kota Wisata DIY</div>
+          </div>
+        </div>
+
+        <div class="image-destination">
+          <div class="image-gallery">
+            <a target="_blank" href="asset/image/ampat.jpg">
+              <img
+                src="asset/image/ampat.jpg"
+                alt="Raja Ampat"
+                width="600"
+                height="400"
+              />
+            </a>
+            <div class="desc">Raja Ampat</div>
+          </div>
+        </div>
+
+        <div class="image-destination">
+          <div class="image-gallery">
+            <a target="_blank" href="asset/image/gunung.jpg">
+              <img
+                src="asset/image/gunung.jpg"
+                alt="Gunung"
+                width="600"
+                height="400"
+              />
+            </a>
+            <div class="desc">Gunung Merbabu</div>
+          </div>
+        </div>
+        <div class="image-destination">
+          <div class="image-gallery">
+            <a target="_blank" href="asset/image/airterjun.jpg">
+              <img
+                src="asset/image/airterjun.jpg"
+                alt="Air Terjun"
+                width="600"
+                height="400"
+              />
+            </a>
+            <div class="desc">Air Terjun Nglirip</div>
+          </div>
+        </div>
+
+        <div class="image-destination">
+          <div class="image-gallery">
+            <a target="_blank" href="asset/image/danau.jpg">
+              <img
+                src="asset/image/danau.jpg"
+                alt="Danau"
+                width="600"
+                height="400"
+              />
+            </a>
+            <div class="desc">Danau Toba</div>
+          </div>
+        </div>
+
+        <div class="image-destination">
+          <div class="image-gallery">
+            <a target="_blank" href="asset/image/candi.jpg">
+              <img
+                src="asset/image/candi.jpg"
+                alt="Borobudur"
+                width="600"
+                height="400"
+              />
+            </a>
+            <div class="desc">Candi Borobudur</div>
+          </div>
+        </div>
+
+        <div class="image-destination">
+          <div class="image-gallery">
+            <a target="_blank" href="asset/image/pantai.jpg">
+              <img
+                src="asset/image/pantai.jpg"
+                alt="Mountains"
+                width="600"
+                height="400"
+              />
+            </a>
+            <div class="desc">Selong Belanak</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- html untuk blog -->
+      <section id="blog">
+        <article class="contentBlog">
+          <div class="title-content-blog">
+            <h2>Blog</h2>
+          </div>
+          <div class="card-container">
+            <div
+              onclick="showBlog('gunungBromo', 'Gunung Bromo', 'Vian Lathif')"
+              class="card"
+            >
+              <div class="card-image">
+                <img src="asset/image/bromo1.jpg" alt="Gunung Bromo" />
+              </div>
+              <div class="card-content">
+                <h5 class="card-title">Gunung Bromo</h5>
+                <p class="card-text">
+                  Gunung Bromo adalah salah satu destinasi wisata alam terkenal
+                  di Indonesia...
+                </p>
+                <p class="card-text-person">Vian Lathif</p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Kamis, 26 Oktober 2023</small
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div
+              onclick="showBlog('gunungMerbabu', 'Gunung Merbabu', 'Anang Prasetyo')"
+              class="card"
+            >
+              <div class="card-image">
+                <img src="asset/image/merbabu1.jpeg" alt="Gunung Merbabu" />
+              </div>
+              <div class="card-content">
+                <h5 class="card-title">Gunung Merbabu</h5>
+                <p class="card-text">
+                  Gunung Merbabu, sebuah gunung berapi yang menakjubkan...
+                </p>
+                <p class="card-text-person">Anang Prasetyo</p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Jumat, 27 Oktober 2023</small
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div
+              onclick="showBlog('danauToba', 'Danau Toba', 'Uzumaki Naruto')"
+              class="card"
+            >
+              <div class="card-image">
+                <img src="asset/image/toba.jpeg" alt="Danau Toba" />
+              </div>
+              <div class="card-content">
+                <h5 class="card-title">Danau Toba</h5>
+                <p class="card-text">
+                  Indonesia, dengan kekayaan alamnya yang tiada tara,
+                  membanggakan...
+                </p>
+                <p class="card-text-person">Uzumaki Naruto</p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Minggu, 22 Oktober 2023</small
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div
+              onclick="showBlog('pulauBali', 'Pulau Bali', 'Namikaze Minato')"
+              class="card"
+            >
+              <div class="card-image">
+                <img src="asset/image/bali.jpg" alt="Gapura Bali" />
+              </div>
+              <div class="card-content">
+                <h5 class="card-title">Pulau Bali</h5>
+                <p class="card-text">
+                  Bali, sebuah pulau yang terletak di kepulauan Indonesia...
+                </p>
+                <p class="card-text-person">Namikaze Minato</p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Minggu, 22 Oktober 2023</small
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div
+              onclick="showBlog('parangtritis','Parangtritis', 'Maito Guy')"
+              class="card"
+            >
+              <div class="card-image">
+                <img src="asset/image/parangtritis.jpeg" alt="Parang Tritis" />
+              </div>
+              <div class="card-content">
+                <h5 class="card-title">Parang Tritis</h5>
+                <p class="card-text">
+                  Pantai Parangtritis adalah salah satu surga tersembunyi di
+                  Yogyakarta...
+                </p>
+                <p class="card-text-person">Maito Guy</p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Selasa, 24 Oktober 2023</small
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div
+              onclick="showBlog('komodoIsland', 'Komodo Island', 'Hatake Kakashi')"
+              class="card"
+            >
+              <div class="card-image">
+                <img src="asset/image/komodoisland.jpeg" alt="komodo island" />
+              </div>
+              <div class="card-content">
+                <h5 class="card-title">Komodo Island</h5>
+                <p class="card-text">
+                  Pulau Komodo adalah surganya para penjelajah alam dan pecinta
+                  satwa...
+                </p>
+                <p class="card-text-person">Hatake Kakashi</p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Kamis, 26 Oktober 2023</small
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              onclick="showBlog('rajaAmpat','Raja Ampat', 'Gojo Satoru')"
+              class="card"
+            >
+              <div class="card-image">
+                <img src="asset/image/rajaampat.jpg" alt="raja ampat" />
+              </div>
+              <div class="card-content">
+                <h5 class="card-title">Raja Ampat</h5>
+                <p class="card-text">
+                  Raja Ampat, yang terletak di provinsi Papua Barat, Indonesia,
+                  adalah...
+                </p>
+                <p class="card-text-person">Gojo Satoru</p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Kamis, 26 Oktober 2023</small
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              onclick="showBlog('bandaNeira', 'Banda Neira', 'Megumin')"
+              class="card"
+            >
+              <div class="card-image">
+                <img src="asset/image/bandaneira.jpeg" alt="Banda Neira" />
+              </div>
+              <div class="card-content">
+                <h5 class="card-title">Banda Neira</h5>
+                <p class="card-text">
+                  Banda Neira, sebuah pulau kecil yang terletak di Kepulauan
+                  Banda...
+                </p>
+                <p class="card-text-person">Megumin</p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Rabu, 25 Oktober 2023</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- tombol load more -->
+          <div class="load-more">
+            <button class="load-more-button">Blog Lainnya</button>
+          </div>
+
+          <aside class="additional-info">
+            <div class="image-left">
+              <img src="asset/image/trapel.jpeg" alt="Orang Berwisata" />
+            </div>
+            <div class="content">
+              <h2>Ingin Berwisata?</h2>
+              <p>
+                Temukan tips perjalanan terbaru dan berita terkini tentang
+                destinasi wisata Indonesia yang indah di sini.
+              </p>
+              <a href="#">Baca Lebih Lanjut</a>
+            </div>
+            <div class="image-right">
+              <img src="asset/image/trapel.jpeg" alt="Orang Berwisata" />
+            </div>
+          </aside>
+        </article>
+      </section>
+
+      <!-- html untuk about -->
+      <section id="about">
+        <article class="aboutUs">
+          <h1>Tentang Kami</h1>
+          <p>
+            Selamat datang di WisataID, komunitas online yang didedikasikan
+            untuk pecinta alam dan penjelajah Indonesia! Kami adalah tempat di
+            mana para pelancong dan pecinta alam berkumpul untuk berbagi
+            pengalaman, inspirasi, dan informasi tentang destinasi wisata
+            Indonesia yang menakjubkan.
+          </p>
+        </article>
+
+        <div class="flex-container">
+          <article class="flex-item">
+            <h1>Misi Kami</h1>
+            <ul>
+              <li>Menghubungkan Para Pecinta Alam Indonesia</li>
+              <p>
+                Kami bertujuan untuk menjadi wadah tempat para pelancong dan
+                pecinta alam Indonesia dapat saling terhubung, berbagi
+                pengalaman, dan menemukan komunitas yang mendukung.
+              </p>
+              <li>Inspirasi dan Informasi</li>
+              <p>
+                Kami berkomitmen untuk memberikan inspirasi kepada para
+                pelancong dan pecinta alam melalui cerita perjalanan dan
+                informasi yang berguna.
+              </p>
+              <li>Menyuarakan Keindahan Setiap Sudut Indonesia</li>
+              <p>
+                Setiap sudut Indonesia memiliki cerita dan keindahannya sendiri.
+                Kami ingin menyuarakan keunikan dan keindahan setiap destinasi,
+                dari pegunungan yang megah hingga pantai yang memesona.
+              </p>
+            </ul>
+          </article>
+
+          <article class="flex-item">
+            <h1>Kami menawarkan</h1>
+            <ul>
+              <li>Informasi Terpercaya</li>
+              <p>
+                Kami menyajikan informasi terpercaya tentang destinasi wisata,
+                termasuk tips perjalanan, kegiatan menarik, dan tempat-tempat
+                unik yang mungkin belum Anda ketahui.
+              </p>
+              <li>Komunitas yang Ramah</li>
+              <p>
+                Komunitas penuh semangat, di mana Anda dapat bertukar cerita,
+                foto, dan saran dengan sesama pelancong.
+              </p>
+              <li>Berkolaborasi</li>
+              <p>
+                Bersama-sama, kita dapat membuat situs ini menjadi sumber daya
+                terbaik untuk penjelajah Indonesia.
+              </p>
+            </ul>
+          </article>
+        </div>
+
+        <article class="join">
+          <h1>Bergabunglah Dengan Kami!</h1>
+          <p>
+            Jangan ragu untuk bergabung dengan komunitas kami dan mulai
+            menjelajahi keindahan alam Nusantara bersama-sama. Terima kasih
+            telah memilih Wisata Alam Indonesia sebagai sumber inspirasi
+            perjalanan Anda!
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <div class="copy-right">
+        <p>&copy; 2023 WisataID. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

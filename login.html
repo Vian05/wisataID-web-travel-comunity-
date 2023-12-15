@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/styles/login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <title>Login WisataID</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="back-button">
+        <a href="javascript:history.back()">
+          <i class="fas fa-arrow-left"></i> Kembali
+        </a>
+      </div>
+      <div class="header-content">
+        <h1 class="title-header"><a href="index.html">WisataID</a></h1>
+        <p class="person-header">Masuk untuk Berbagi Pengalaman Wisata Anda</p>
+      </div>
+    </header>
+    <main>
+      <section class="container forms">
+        <div class="form login">
+          <div class="form-content">
+            <header>Login</header>
+            <form action="#">
+              <div class="field input-field">
+                <input type="email" placeholder="Email" class="input" />
+              </div>
+              <div class="field input-field">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="password"
+                />
+                <i class="fas fa-eye fa-eye-slash eyeIcon"></i>
+              </div>
+              <div class="form-link">
+                <a href="#" class="forgot-pass">Forgot password?</a>
+              </div>
+              <div class="field button-field">
+                <button>Login</button>
+              </div>
+            </form>
+            <div class="form-link">
+              <span
+                >Don't have an account?
+                <a href="#" class="link signup-link">Signup</a></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form signup">
+          <div class="form-content">
+            <header>Signup</header>
+            <form action="#">
+              <div class="field input-field">
+                <input type="email" placeholder="Email" class="input" />
+              </div>
+              <div class="field input-field">
+                <input
+                  type="password"
+                  placeholder="Create password"
+                  class="password"
+                />
+              </div>
+              <div class="field input-field">
+                <input
+                  type="password"
+                  placeholder="Confirm password"
+                  class="password"
+                />
+                <i class="fas fa-eye fa-eye-slash eyeIcon"></i>
+              </div>
+              <div class="field button-field">
+                <button>Signup</button>
+              </div>
+            </form>
+            <div class="form-link">
+              <span
+                >Already have an account?
+                <a href="#" class="link login-link">Login</a></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <div class="copy-right">
+        <p>&copy; 2023 WisataID. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

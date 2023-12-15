@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../image/bromo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-header {
+  background-color: #144d53;
+  padding: 25px;
+  text-align: left;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+}
+
+.back-button a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.back-button i {
+  margin-right: 5px;
+}
+
+.header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.page-header h1.title-header {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px; /* Atur ukuran font sesuai kebutuhan Anda */
+}
+.page-header h1.title-header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.page-header p.person-header {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 16px; /* Atur ukuran font sesuai kebutuhan Anda */
+}
+
+
+@media (max-width: 767px) {
+  .page-header {
+      padding: 10px;
+  }
+
+  .page-header h1.title-header {
+      font-size: 18px;
+  }
+
+  .page-header p.person-header {
+      font-size: 12px;
+  }
+  .back-button {
+    display: none;
+  }
+}
+/* login */
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+.form {
+  position: absolute;
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 6px;
+  background-color: rgba(26, 60, 64, 0.3);
+}
+.form.signup {
+  display: none; 
+}
+
+.forms.show-signup .form.signup {
+  display: block; 
+}
+.form-content header {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+form {
+  margin-top: 30px;
+}
+.form .field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.field input {
+  color: #fff;
+  outline: none;
+  padding: 0 15px;
+  border-bottom: 1px solid#CACACA;
+  background-color: rgba(26, 60, 64, 0.3);
+}
+
+.field input::placeholder {
+  color: #fff;
+}
+.field input:focus {
+  border-bottom-width: 2px;
+}
+.eyeIcon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+}
+.field button {
+  color: black;
+  background-color: #ffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.field button:hover {
+  background-color: #8b8b8b;
+}
+.form-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-link span,
+.form-link a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.form a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.form-content a:hover {
+  text-decoration: underline;
+}
+
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  background-color: #144D53;
+  padding: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #E4EDDB;
+}
+
+.social-icon:hover {
+  color: #307672;
+}
+
+
+footer .copy-right {
+  background-color: #1A3C40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

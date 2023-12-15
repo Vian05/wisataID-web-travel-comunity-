@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+    background-color: #144d53;
+    padding: 25px;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+}
+
+.back-button a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+
+.header-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.page-header h1.title-header {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px; 
+}
+
+.page-header p.person-header {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 16px; 
+}
+
+
+@media (max-width: 767px) {
+  .page-header {
+      padding: 10px;
+  }
+
+  .page-header h1.title-header {
+      font-size: 18px;
+  }
+
+  .page-header p.person-header {
+      font-size: 12px;
+  }
+  .back-button {
+    font-size: 12px;
+  }
+
+  .back-button a span {
+    display: none;
+  }
+}
+
+  
+
+/* css blog */
+.container-blog {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.page-container {
+  width: 75%;
+}
+.page-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.card {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.card-header small {
+  color: #6c757d;
+}
+
+.card-header small a {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-footer {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.card-footer .coment {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-footer hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.blog-media {
+  position: relative;
+}
+
+.blog-media img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-media .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e4eddb;
+  color: #1a3c40;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.card-footer .media {
+  margin-bottom: 20px;
+}
+
+.card-footer .media img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.card-footer .media .media-body {
+  width: calc(100% - 65px);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+
+/* comment */
+
+.card-footer{
+  padding: 2rem;
+}
+
+.card-footer h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-footer h4 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container-footer .comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+  width: 50px; 
+  height: 50px;
+}
+
+.comment-content {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-content h5 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.timestamp {
+  color: #777;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.like, .dislike, .reply {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 0.9rem;
+}
+
+.like:hover, .dislike:hover, .reply:hover {
+  color: #1266f1;
+}
+
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+
+.fa-thumbs-down:before {
+  content: "\f165";
+}
+
+
+/* sidebar */
+
+.page-sidebar {
+  width: 25%;
+  padding: 25px;
+  /* margin-top: 20px; */
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+.page-sidebar .tags {
+  margin-bottom: 10px;
+}
+
+.page-sidebar h6 {
+  margin-bottom: 10px;
+}
+
+.page-sidebar .badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.ad-card {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 15px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+.ad-card h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.ad-card p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.ad-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.ad-card a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #307672;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ad-card a:hover {
+  color: #1A3C40;
+  background-color: #e4eddb;
+}
+@media (max-width: 767px) {
+  .container-blog {
+    flex-direction: column; /* Mengubah tata letak menjadi kolom */
+  }
+
+  .page-container {
+    width: 100%;
+  }
+
+  .page-sidebar {
+    width: 100%; /* Mengisi lebar layar penuh */
+    margin-top: 20px; /* Menambahkan margin atas untuk memisahkan dari konten utama */
+  }
+  .ad-card img {
+    width: 50%;
+  }
+}
+
+/* footer */
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  background-color: #144D53;
+  padding: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #E4EDDB; /* Warna ikon, sesuaikan dengan desain Anda */
+}
+
+.social-icon:hover {
+  color: #307672; /* Warna ikon saat dihover, sesuaikan dengan desain Anda */
+}
+
+
+footer .copy-right {
+  background-color: #1A3C40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
